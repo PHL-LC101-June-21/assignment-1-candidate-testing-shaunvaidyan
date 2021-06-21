@@ -27,8 +27,6 @@ candidateAnswers[i] = input.question(`${questions[i]} `)
 console.log(candidateAnswers)
 }
 }
-//candidateAnswers = input.question(`${questions[1]} `)
-//}
 
 function gradeQuiz(candidateAnswers) {
 
