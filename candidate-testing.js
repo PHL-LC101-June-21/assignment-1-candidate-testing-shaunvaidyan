@@ -49,9 +49,9 @@ function gradeQuiz(candidateAnswers) {
       grade += 0;
     }
 }
-  let score = (grade/correctAnswers.length*100)
-console.log(`***  You answered ${grade} questions correctly out of ${correctAnswers.length} for a score of ${score}%  ***`)
-  if (score>=80){
+  grade = (grade/correctAnswers.length*100)
+  console.log(`***  You answered ${grade/100*correctAnswers.length} questions correctly out of ${correctAnswers.length} for a score of ${grade}%  ***`)
+  if (grade>=80){
     console.log(`*** Status: Passed ***`)
   } else {
     console.log(`*** Status: Failed ***`)
